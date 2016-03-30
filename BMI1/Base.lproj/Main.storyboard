@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -23,16 +24,23 @@
                                 <rect key="frame" x="0.0" y="-169" width="676" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Uph-gW-nLJ" secondAttribute="height" multiplier="4:1" id="NPa-HJ-eAZ"/>
+                                    <constraint firstAttribute="width" secondItem="Uph-gW-nLJ" secondAttribute="height" multiplier="200:49" id="jac-16-GFi"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="NPa-HJ-eAZ"/>
+                                        <exclude reference="jac-16-GFi"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="-138" y="0.0" width="676" height="169"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="NPa-HJ-eAZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="196"/>
+                                    <mask key="constraints">
+                                        <include reference="jac-16-GFi"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -67,6 +75,21 @@
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Uph-gW-nLJ"/>
+                                <include reference="A43-Xl-MMS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="50W-SH-ean"/>
+                                <include reference="HCh-4C-XIN"/>
+                                <include reference="xq7-97-hOB"/>
+                                <include reference="6y1-UC-6rS"/>
+                                <include reference="fsu-aT-egW"/>
+                                <include reference="v9e-ar-eCp"/>
+                                <include reference="Gsc-vD-Nld"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
                                 <include reference="Uph-gW-nLJ"/>
                                 <include reference="A43-Xl-MMS"/>
