@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,77 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="Uph-gW-nLJ">
+                                <rect key="frame" x="0.0" y="-169" width="676" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Uph-gW-nLJ" secondAttribute="height" multiplier="4:1" id="NPa-HJ-eAZ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NPa-HJ-eAZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-138" y="0.0" width="676" height="169"/>
+                                    <mask key="constraints">
+                                        <include reference="NPa-HJ-eAZ"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A43-Xl-MMS">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.84438124202356224" green="0.93283964564531807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uph-gW-nLJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="50W-SH-ean"/>
+                            <constraint firstItem="A43-Xl-MMS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="6y1-UC-6rS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A43-Xl-MMS" secondAttribute="bottom" id="Gsc-vD-Nld"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uph-gW-nLJ" secondAttribute="trailing" constant="-16" id="HCh-4C-XIN"/>
+                            <constraint firstItem="A43-Xl-MMS" firstAttribute="top" secondItem="Uph-gW-nLJ" secondAttribute="bottom" id="fsu-aT-egW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A43-Xl-MMS" secondAttribute="trailing" constant="-16" id="v9e-ar-eCp"/>
+                            <constraint firstItem="Uph-gW-nLJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="xq7-97-hOB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Uph-gW-nLJ"/>
+                                <exclude reference="A43-Xl-MMS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="50W-SH-ean"/>
+                                <exclude reference="HCh-4C-XIN"/>
+                                <exclude reference="xq7-97-hOB"/>
+                                <exclude reference="6y1-UC-6rS"/>
+                                <exclude reference="fsu-aT-egW"/>
+                                <exclude reference="v9e-ar-eCp"/>
+                                <exclude reference="Gsc-vD-Nld"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Uph-gW-nLJ"/>
+                                <include reference="A43-Xl-MMS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="50W-SH-ean"/>
+                                <include reference="HCh-4C-XIN"/>
+                                <include reference="xq7-97-hOB"/>
+                                <include reference="6y1-UC-6rS"/>
+                                <include reference="fsu-aT-egW"/>
+                                <include reference="v9e-ar-eCp"/>
+                                <include reference="Gsc-vD-Nld"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304.5" y="418.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Banner" width="676" height="169"/>
+    </resources>
 </document>
