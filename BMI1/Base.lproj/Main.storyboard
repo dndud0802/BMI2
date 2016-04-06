@@ -75,6 +75,9 @@
                                         <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="3Kt-Sy-uoM"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height in m" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7E-BH-xj2">
                                         <rect key="frame" x="-25" y="-30" width="97" height="30"/>
@@ -83,6 +86,9 @@
                                         <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="148" y="47" width="97" height="30"/>
                                         </variation>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="ZQf-7m-WeE"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.84438124202356224" green="0.93283964564531807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -204,6 +210,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="BMILabel" destination="MuO-Ag-O1f" id="N5n-ko-QMe"/>
+                        <outlet property="HeightTextField" destination="p7E-BH-xj2" id="0xD-p2-o9W"/>
+                        <outlet property="WeightTextField" destination="5jf-Op-2m8" id="oDy-5j-0FY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
