@@ -52,9 +52,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="55" y="51" width="51" height="21"/>
-                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JW-Yc-XgY">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -67,9 +64,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="286" y="47" width="35" height="84"/>
-                                        </variation>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight in kg" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5jf-Op-2m8">
                                         <rect key="frame" x="-25" y="-30" width="97" height="30"/>
@@ -83,9 +77,6 @@
                                         <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="148" y="47" width="97" height="30"/>
-                                        </variation>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="ZQf-7m-WeE"/>
                                         </connections>
@@ -115,18 +106,18 @@
                                         <exclude reference="p7E-BH-xj2"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="d6L-Te-vBQ"/>
-                                        <exclude reference="4yG-qx-feY"/>
-                                        <exclude reference="NHN-Gv-Fyu"/>
-                                        <exclude reference="Ctu-P3-GDP"/>
-                                        <exclude reference="aQy-Tw-alM"/>
-                                        <exclude reference="heI-Ic-GnA"/>
                                         <exclude reference="4xV-gx-1Xl"/>
                                         <exclude reference="Qi5-uO-Gbb"/>
                                         <exclude reference="Spw-zm-q6u"/>
+                                        <exclude reference="Ctu-P3-GDP"/>
+                                        <exclude reference="aQy-Tw-alM"/>
+                                        <exclude reference="heI-Ic-GnA"/>
+                                        <exclude reference="4yG-qx-feY"/>
+                                        <exclude reference="NHN-Gv-Fyu"/>
                                         <exclude reference="pdI-jg-z0i"/>
                                         <exclude reference="pnS-yc-Rxu"/>
                                         <exclude reference="qRK-D3-COU"/>
+                                        <exclude reference="d6L-Te-vBQ"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -138,18 +129,18 @@
                                         <include reference="p7E-BH-xj2"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="d6L-Te-vBQ"/>
-                                        <include reference="4yG-qx-feY"/>
-                                        <include reference="NHN-Gv-Fyu"/>
-                                        <include reference="Ctu-P3-GDP"/>
-                                        <include reference="aQy-Tw-alM"/>
-                                        <include reference="heI-Ic-GnA"/>
                                         <include reference="4xV-gx-1Xl"/>
                                         <include reference="Qi5-uO-Gbb"/>
                                         <include reference="Spw-zm-q6u"/>
+                                        <include reference="Ctu-P3-GDP"/>
+                                        <include reference="aQy-Tw-alM"/>
+                                        <include reference="heI-Ic-GnA"/>
+                                        <include reference="4yG-qx-feY"/>
+                                        <include reference="NHN-Gv-Fyu"/>
                                         <include reference="pdI-jg-z0i"/>
                                         <include reference="pnS-yc-Rxu"/>
                                         <include reference="qRK-D3-COU"/>
+                                        <include reference="d6L-Te-vBQ"/>
                                     </mask>
                                 </variation>
                             </view>

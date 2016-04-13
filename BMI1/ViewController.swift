@@ -27,6 +27,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        // inspect which UITextField is selected
+        // tell the textField to resign as the first responder
+        // tell the textField to stop receiving keyboard input
+        textField.resignFirstResponder()
+        return true
+    }
 
 }
 
