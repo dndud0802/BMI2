@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A9990D81CFEAD0900221559 /* BMIAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9990D71CFEAD0900221559 /* BMIAboutViewController.swift */; };
 		9AA9BE4E1CAB93430055917A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9BE4D1CAB93430055917A /* AppDelegate.swift */; };
 		9AA9BE501CAB93430055917A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9BE4F1CAB93430055917A /* ViewController.swift */; };
 		9AA9BE531CAB93430055917A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA9BE511CAB93430055917A /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		9AA9BE581CAB93430055917A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA9BE561CAB93430055917A /* LaunchScreen.storyboard */; };
 		9AA9BE631CAB93430055917A /* BMI1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9BE621CAB93430055917A /* BMI1Tests.swift */; };
 		9AA9BE6E1CAB93430055917A /* BMI1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9BE6D1CAB93430055917A /* BMI1UITests.swift */; };
+		9ABC4D331CFEA229003EAD81 /* About.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ABC4D321CFEA229003EAD81 /* About.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A9990D71CFEAD0900221559 /* BMIAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BMIAboutViewController.swift; path = ../BMIAboutViewController.swift; sourceTree = "<group>"; };
 		9AA9BE4A1CAB93430055917A /* BMI1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMI1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA9BE4D1CAB93430055917A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AA9BE4F1CAB93430055917A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		9AA9BE691CAB93430055917A /* BMI1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMI1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA9BE6D1CAB93430055917A /* BMI1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI1UITests.swift; sourceTree = "<group>"; };
 		9AA9BE6F1CAB93430055917A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ABC4D321CFEA229003EAD81 /* About.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = About.xcassets; path = ../About.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,10 @@
 			children = (
 				9AA9BE4D1CAB93430055917A /* AppDelegate.swift */,
 				9AA9BE4F1CAB93430055917A /* ViewController.swift */,
+				9A9990D71CFEAD0900221559 /* BMIAboutViewController.swift */,
 				9AA9BE511CAB93430055917A /* Main.storyboard */,
 				9AA9BE541CAB93430055917A /* Assets.xcassets */,
+				9ABC4D321CFEA229003EAD81 /* About.xcassets */,
 				9AA9BE561CAB93430055917A /* LaunchScreen.storyboard */,
 				9AA9BE591CAB93430055917A /* Info.plist */,
 			);
@@ -230,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AA9BE581CAB93430055917A /* LaunchScreen.storyboard in Resources */,
+				9ABC4D331CFEA229003EAD81 /* About.xcassets in Resources */,
 				9AA9BE551CAB93430055917A /* Assets.xcassets in Resources */,
 				9AA9BE531CAB93430055917A /* Main.storyboard in Resources */,
 			);
@@ -257,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AA9BE501CAB93430055917A /* ViewController.swift in Sources */,
+				9A9990D81CFEAD0900221559 /* BMIAboutViewController.swift in Sources */,
 				9AA9BE4E1CAB93430055917A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,9 +409,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 우영 천 (MQ5Z5R8KMX)";
 				INFOPLIST_FILE = BMI1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.sogang.cd.20131611.BMI1;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.sogang.cscp2.20131611.bmi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -412,9 +421,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 우영 천 (MQ5Z5R8KMX)";
 				INFOPLIST_FILE = BMI1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.sogang.cd.20131611.BMI1;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.sogang.cscp2.20131611.bmi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -484,6 +494,7 @@
 				9AA9BE741CAB93430055917A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AA9BE751CAB93430055917A /* Build configuration list for PBXNativeTarget "BMI1Tests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +503,7 @@
 				9AA9BE771CAB93430055917A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AA9BE781CAB93430055917A /* Build configuration list for PBXNativeTarget "BMI1UITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +512,7 @@
 				9AA9BE7A1CAB93430055917A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

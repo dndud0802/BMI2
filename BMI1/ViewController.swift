@@ -8,7 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    class func doDiv100(u: Int) -> Double {
+        return Double(u) * 0.01
+    }
+    class func doDiv2(u: Int) -> Double {
+        return Double(u) * 0.5
+    }
+    
+    let ListOfHeightsInM : Array<Double> = Array(140...220).map(ViewController.doDiv100)
+    let ListOfWeightsInKg = Array(80...240).map(ViewController.doDiv2)
     
     // Adding Model
     // No designignagted intit() for UIViewController
@@ -32,6 +42,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var weightTextField: UITextField!
     
+    @IBOutlet weak var heightPickerView: UIPickerView!
+    
+    @IBOutlet weak var weightPickerView: UIPickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,6 +91,45 @@ class ViewController: UIViewController, UITextFieldDelegate {
             print(" Something Wrong")
         }
         
+        updateUI()
+    }
+    
+    // PickerViewDataSource
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        switch(pickerView){
+        case heightPickerView:
+            return self.ListOfHeightsInM.count
+        case weightPickerView:
+            return self.ListOfWeightsInKg.count
+        default:
+            return 1
+        }
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        switch (pickerView) {
+        case heightPickerView:
+            return String(format: "%4.2f", self.ListOfHeightsInM[row])
+        case weightPickerView:
+            return String(format: "%4.1f", self.ListOfWeightsInKg[row])
+        default:
+            return ""
+        }
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        switch (pickerView) {
+        case heightPickerView:
+            self.height = self.ListOfHeightsInM[row]
+        case weightPickerView:
+            self.weight = self.ListOfWeightsInKg[row]
+        default:
+            break
+        }
         updateUI()
     }
 
