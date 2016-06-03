@@ -421,6 +421,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8yR-0r-gXA">
+                                <rect key="frame" x="34" y="209" width="506" height="270"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="iOS Development in Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsk-w2-DtV">
+                                        <rect key="frame" x="0.0" y="0.0" width="194" height="270"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        </variation>
+                                    </label>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" image="Square" translatesAutoresizingMaskIntoConstraints="NO" id="0nM-24-Mn7">
+                                        <rect key="frame" x="214" y="0.0" width="292" height="270"/>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="12" y="74" width="292" height="270"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=compact" alignment="center" axis="vertical" misplaced="YES">
+                                    <rect key="frame" x="54" y="229" width="292" height="311"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" alignment="center" axis="vertical" spacing="40"/>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bl-52-khW">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Dismiss"/>
@@ -431,92 +455,74 @@
                                     <action selector="doDismiss:" destination="M6f-HS-Z8t" eventType="touchUpInside" id="Ogl-Ja-s6q"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8yR-0r-gXA">
-                                <rect key="frame" x="34" y="209" width="506" height="270"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="iOS Development in Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsk-w2-DtV">
-                                        <rect key="frame" x="0.0" y="0.0" width="194" height="270"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="194" height="270"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        </variation>
-                                    </label>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" image="Square" translatesAutoresizingMaskIntoConstraints="NO" id="0nM-24-Mn7">
-                                        <rect key="frame" x="214" y="0.0" width="292" height="270"/>
-                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="214" y="0.0" width="292" height="270"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="12" y="74" width="292" height="270"/>
-                                        </variation>
-                                    </imageView>
-                                </subviews>
-                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="34" y="209" width="506" height="270"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" alignment="center" axis="vertical" misplaced="YES">
-                                    <rect key="frame" x="54" y="229" width="292" height="311"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" alignment="center" axis="vertical" spacing="40"/>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8yR-0r-gXA" firstAttribute="centerY" secondItem="nom-zs-Mcn" secondAttribute="centerY" id="0cy-ja-Tbs"/>
+                            <constraint firstItem="1bl-52-khW" firstAttribute="leading" secondItem="8yR-0r-gXA" secondAttribute="leading" id="6PS-vD-arr"/>
+                            <constraint firstItem="1bl-52-khW" firstAttribute="top" secondItem="T4a-ab-L11" secondAttribute="bottom" constant="323" id="9ZR-4Y-i1H"/>
                             <constraint firstItem="7wp-PJ-mBY" firstAttribute="top" secondItem="1bl-52-khW" secondAttribute="bottom" constant="20" id="C5v-hV-59E"/>
                             <constraint firstItem="8yR-0r-gXA" firstAttribute="centerX" secondItem="nom-zs-Mcn" secondAttribute="centerX" id="DUo-TM-auZ"/>
                             <constraint firstItem="1bl-52-khW" firstAttribute="centerX" secondItem="nom-zs-Mcn" secondAttribute="centerX" id="PNo-vn-Qxe"/>
+                            <constraint firstItem="8yR-0r-gXA" firstAttribute="centerY" secondItem="nom-zs-Mcn" secondAttribute="centerY" id="a2f-pJ-g6R"/>
+                            <constraint firstItem="8yR-0r-gXA" firstAttribute="centerX" secondItem="nom-zs-Mcn" secondAttribute="centerX" id="em5-EO-QnF"/>
                             <constraint firstItem="8yR-0r-gXA" firstAttribute="centerX" secondItem="nom-zs-Mcn" secondAttribute="centerX" id="nM4-1c-eJA"/>
                             <constraint firstItem="8yR-0r-gXA" firstAttribute="centerY" secondItem="nom-zs-Mcn" secondAttribute="centerY" id="qhA-3t-sZi"/>
+                            <constraint firstItem="7wp-PJ-mBY" firstAttribute="top" secondItem="1bl-52-khW" secondAttribute="bottom" constant="27" id="z4Z-Jm-27x"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="1bl-52-khW"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="PNo-vn-Qxe"/>
                                 <exclude reference="0cy-ja-Tbs"/>
                                 <exclude reference="DUo-TM-auZ"/>
+                                <exclude reference="a2f-pJ-g6R"/>
+                                <exclude reference="em5-EO-QnF"/>
                                 <exclude reference="nM4-1c-eJA"/>
                                 <exclude reference="qhA-3t-sZi"/>
+                                <exclude reference="6PS-vD-arr"/>
+                                <exclude reference="9ZR-4Y-i1H"/>
+                                <exclude reference="PNo-vn-Qxe"/>
                                 <exclude reference="C5v-hV-59E"/>
+                                <exclude reference="z4Z-Jm-27x"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="subviews">
-                                <exclude reference="1bl-52-khW"/>
                                 <include reference="8yR-0r-gXA"/>
+                                <include reference="1bl-52-khW"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="0cy-ja-Tbs"/>
+                                <include reference="a2f-pJ-g6R"/>
+                                <include reference="em5-EO-QnF"/>
+                                <include reference="6PS-vD-arr"/>
+                                <include reference="9ZR-4Y-i1H"/>
+                                <include reference="z4Z-Jm-27x"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="1bl-52-khW"/>
                                 <include reference="8yR-0r-gXA"/>
+                                <include reference="1bl-52-khW"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="PNo-vn-Qxe"/>
                                 <include reference="0cy-ja-Tbs"/>
                                 <include reference="DUo-TM-auZ"/>
+                                <include reference="PNo-vn-Qxe"/>
                                 <include reference="C5v-hV-59E"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
-                                <include reference="1bl-52-khW"/>
                                 <include reference="8yR-0r-gXA"/>
+                                <include reference="1bl-52-khW"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="PNo-vn-Qxe"/>
                                 <include reference="nM4-1c-eJA"/>
                                 <include reference="qhA-3t-sZi"/>
+                                <include reference="PNo-vn-Qxe"/>
                                 <include reference="C5v-hV-59E"/>
                             </mask>
                         </variation>
@@ -524,7 +530,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBi-dG-DfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="984" y="418.5"/>
+            <point key="canvasLocation" x="994" y="361.5"/>
         </scene>
     </scenes>
     <resources>
