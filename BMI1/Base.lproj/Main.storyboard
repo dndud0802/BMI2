@@ -440,9 +440,7 @@
                                         </variation>
                                     </imageView>
                                 </subviews>
-                                <variation key="heightClass=regular-widthClass=compact" alignment="center" axis="vertical" misplaced="YES">
-                                    <rect key="frame" x="54" y="229" width="292" height="311"/>
-                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" alignment="center" axis="vertical"/>
                                 <variation key="heightClass=regular-widthClass=regular" alignment="center" axis="vertical" spacing="40"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bl-52-khW">
